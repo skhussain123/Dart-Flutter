@@ -128,3 +128,36 @@ print("I am from \nUS.");
 print("I am from \tUS.");
 }
 ```
+##### Create A Raw String In Dart
+```dart
+// Set price value
+num price = 10;
+String withoutRawString = "The value of price is \t $price"; // regular String
+String withRawString =r"The value of price is \t $price"; // raw String
+
+print("Without Raw: $withoutRawString"); // regular result
+print("With Raw: $withRawString"); // with raw result
+
+output:
+Without Raw: The value of price is 	 10
+With Raw: The value of price is \t $price
+```
+
+
+### Type Conversion In Dart
+```dart
+void main() {
+String strvalue = "1";
+print("Type of strvalue is ${strvalue.runtimeType}"); 
+  
+int intvalue = int.parse(strvalue);
+print("Value of intvalue is $intvalue");
+
+print("Type of intvalue is ${intvalue.runtimeType}");
+}
+
+Type of strvalue is String
+Value of intvalue is 1
+Type of intvalue is int
+
+```
