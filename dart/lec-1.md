@@ -10,7 +10,7 @@
 6. var: For storing any value. E.g. ‘Bimal’, 12, ‘z’, true
 
 
-```bash
+```dart
 void main() {
 // declaring variables
 String name = "John";
