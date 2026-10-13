@@ -102,3 +102,29 @@ print("Sum is $sum");
    
 }
 ```
+<br>
+
+#### String 
+```dart
+void main() {
+// Declaring Values     
+String schoolName = "Diamond School";
+String address = "New York 2140";   
+
+// Printing Values
+print("School name is $schoolName and address is $address");   
+}
+```
+
+##### Special Character In String
+* \n New Line
+* \t Tab
+
+```dart
+void main() {
+   
+// Using \n and \t   
+print("I am from \nUS.");
+print("I am from \tUS.");
+}
+```
