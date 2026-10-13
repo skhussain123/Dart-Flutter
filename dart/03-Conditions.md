@@ -123,3 +123,86 @@ dart --enable-asserts file_name.dart
 ```
 
 
+### Switch Case In Dart
+In this tutorial, you will learn to use dart switch case to control your program’s flow. A Switch case is used to execute the code block based on the condition
+
+```dart
+void main(){
+   var dayOfWeek = 5;
+if (dayOfWeek == 1) {
+        print("Day is Sunday.");
+  }
+else if (dayOfWeek == 2) {
+       print("Day is Monday.");
+     }
+else if (dayOfWeek == 3) {
+      print("Day is Tuesday.");
+     }
+else if (dayOfWeek == 4) {
+        print("Day is Wednesday.");
+     }
+else if (dayOfWeek == 5) {
+        print("Day is Thursday.");
+   }
+else if (dayOfWeek == 6) {
+        print("Day is Friday.");
+    }
+else if (dayOfWeek == 7) {
+        print("Day is Saturday.");
+}else{
+        print("Invalid Weekday.");
+     }
+}
+```
+
+```dart
+void main() {
+ const weather = "cloudy";
+
+  switch (weather) {
+    case "sunny":
+        print("Its a sunny day. Put sunscreen.");
+        break;
+    case "snowy":
+        print("Get your skis.");
+      break;
+    case "cloudy":
+    case "rainy": 
+      print("Please bring umbrella.");
+      break;
+    default:
+        print("Sorry I am not familiar with such weather.");
+      break;
+  }
+}
+```
+
+#### Switch Case on Enum
+Enum (Enumeration) ka istemal apni zaroorat ke mutabiq values define karne ke liye hota hai. Is mein aap apni khud ki ek type bana sakte hain, jismein options ki tadaad pehle se muqarrar hoti hai.
+Enum ki madad se aap kisi variable ke liye sirf muqarrar options define kar sakte hain.
+
+```dart
+// define enum outside main function
+enum Weather{ sunny, snowy, cloudy, rainy}
+// main method
+void main() {
+ const weather = Weather.cloudy;
+  
+  switch (weather) {
+    case Weather.sunny:
+        print("Its a sunny day. Put sunscreen.");
+        break;
+    case Weather.snowy:
+        print("Get your skis.");
+      break;
+    case Weather.rainy:
+    case Weather.cloudy:
+      print("Please bring umbrella.");
+      break;
+    default:
+        print("Sorry I am not familiar with such weather.");
+      break;
+  }
+}
+```
+
