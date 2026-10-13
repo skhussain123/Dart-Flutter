@@ -105,3 +105,21 @@ void main(){
 }
 ```
 
+### Assert
+While coding, it is hard to find errors in big projects, so dart provide a assert method to check for the error. It takes conditions as an argument. If the condition is true, nothing happens. If a condition is false, it will raise an error
+
+```dart
+void main() { 
+   var age = 22;
+   assert(age!=22, "Your custom message");
+}
+```
+
+### How to Run File In Assert Mode
+Use this command to run the dart file, which enables assert. If you don’t use this, you will not be able to see the issue. You can use this command below if you are running a dart file from the
+
+```dart
+dart --enable-asserts file_name.dart
+```
+
+
