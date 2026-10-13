@@ -134,4 +134,46 @@ void main() {
 }
 ```
 
+### Logical Operators
+It is used to compare values
+
+* && This is ‘and’, return true if all conditions are true
+* ||	This is ‘or’. Return true if one of the conditions is true
+* !	This is ’not’. return false if the result is true and vice versa
+
+```dart
+void main(){
+  int userid = 123;
+    int userpin = 456;
+
+    // Printing Info
+    print((userid == 123) && (userpin== 456)); // print true
+    print((userid == 1213) && (userpin== 456)); // print false.
+    print((userid == 123) || (userpin== 456)); // print true.
+    print((userid == 1213) || (userpin== 456)); // print true
+    print((userid == 123) != (userpin== 456));//print false
+
+}
+```
+
+#### Type Test Operators
+In Dart, type test operators are useful for checking types at runtime.
+
+* is	is	Gives boolean value true if the object has a specific type
+* is!	is not	Gives boolean value false if the object has a specific type
+
+```dart
+void main() {
+  String value1 = "Dart Tutorial";
+  int age = 10;
+  
+  print(value1 is String);
+  print(age is !int);
+}
+```
+
+
+
+
+
 
