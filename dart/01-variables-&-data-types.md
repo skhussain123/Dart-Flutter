@@ -145,6 +145,7 @@ With Raw: The value of price is \t $price
 
 
 ### Type Conversion In Dart
+#### Convert String To Int In Dart
 ```dart
 void main() {
 String strvalue = "1";
@@ -156,8 +157,112 @@ print("Value of intvalue is $intvalue");
 print("Type of intvalue is ${intvalue.runtimeType}");
 }
 
+Output:
 Type of strvalue is String
 Value of intvalue is 1
 Type of intvalue is int
 
+```
+##### And more methods for conversion
+* Convert String To Double In Dart
+* Convert Int To String In Dart
+* Convert Double To Int In Dart
+
+
+### Lists
+The list holds multiple values in a single variable. It is also called arrays. If you want to store multiple values without creating multiple variables, you can use a list.
+
+```dart
+void main() {
+  
+List<String> names = ["Raj", "John", "Max"];
+print("Value of names is $names");
+print("Value of names[0] is ${names[0]}"); // index 0
+
+int length = names.length;  
+print("The Length of names is $length");
+}
+
+Output:
+Value of names is [Raj, John, Max]
+Value of names[0] is Raj
+The Length of names is 3
+
+```
+
+### Sets
+An unordered collection of unique items is called set in dart. You can store unique data in sets.
+Set doesn’t print duplicate items.
+
+```dart
+void main() {
+ 
+ Set<String> weekday = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+ print("Value of names is $weekday");
+
+
+  int length = weekday.length;
+  print("The Length of names is $length");
+}
+
+Output:
+Value of names is {Sun, Mon, Tue, Wed, Thu, Fri, Sat}
+The Length of names is 7
+```
+
+
+### Maps
+In Dart, a map is an object where you can store data in key-value pairs. Each key occurs only once, but you can use same value multiple times.
+
+```dart
+void main() {
+ 
+ Map<String,String> mydata = {
+   'name' : 'hussain', 
+   'father' : 'faheem'
+   
+   };
+  print("Value of name is $mydata");
+  print(mydata['name']);
+
+}
+
+Output:
+Value of names is {name: hussain, father: faheem}
+hussain
+
+```
+
+#### Var Keyword In Dart
+In Dart, var automatically finds a  data type. In simple terms, var says if you don’t want to specify a data type, I will find a data type for you.
+
+```dart
+void main(){
+
+var name = "John Doe"; // String
+var age = 20; // int
+
+print(name);
+print(age);
+}
+```
+
+#### Runes In Dart
+With runes, you can find Unicode values of String. The Unicode value of a is 97, so runes give 97 as output.
+```dart
+void main() {
+
+String value = "a";
+print(value.runes);
+}
+```
+
+#### How To Check Runtime Type
+You can check runtime type in dart with .runtimeType after the variable name.
+```dart
+void main() { 
+   var a = 10;
+   print(a.runtimeType); 
+   print(a is int); // true
+}
 ```
