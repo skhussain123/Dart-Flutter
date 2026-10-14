@@ -62,3 +62,88 @@ void main() {
 
 ```
 
+#### Use Of Named Parameter
+```dart
+void printInfo({String? name, String? gender}) {
+  print("Hello $name your gender is $gender.");
+}
+
+void main() {
+  // you can pass values in any order in named parameters.
+  printInfo(gender: "Male", name: "John");
+  printInfo(name: "Sita", gender: "Female");
+  printInfo(name: "Reecha", gender: "Female");
+  printInfo(name: "Reecha", gender: "Female");
+  printInfo(name: "Harry", gender: "Male");
+  printInfo(gender: "Male", name: "Santa");
+}
+```
+
+#### Use Of Required In Named Parameter
+```dart
+void printInfo({required String name, required String gender}) {
+  print("Hello $name your gender is $gender.");
+}
+
+void main() {
+  // you can pass values in any order in named parameters.
+  printInfo(gender: "Male", name: "John");
+  printInfo(gender: "Female", name: "Suju");
+}
+```
+
+
+Dart allows you to use optional parameters to make the parameter optional in function calls. Square braces [] are used to specify optional parameters.
+
+```dart
+void printInfo(String name, String gender, [String? title]) {
+  print("Hello $title $name your gender is $gender.");
+}
+
+void main() {
+  printInfo("John", "Male");
+  printInfo("John", "Male", "Mr.");
+  printInfo("Kavya", "Female", "Ms.");
+}
+```
+
+### Anonymous Function In Dart
+
+```dart
+void main() {
+  const fruits = ["Apple", "Mango", "Banana", "Orange"];
+
+  fruits.forEach((fruit) {
+    print(fruit);
+  });
+}
+```
+
+```dart
+void main() {
+// Anonymous function
+  var cube = (int number) {
+    return number * number * number;
+  };
+
+  print("The cube of 2 is ${cube(2)}");
+  print("The cube of 3 is ${cube(3)}");
+}
+```
+
+### Arrow Function In Dart
+```dart
+// arrow function that calculate interest
+double calculateInterest(double principal, double rate, double time) =>
+    principal * rate * time / 100;
+
+void main() {
+  double principal = 5000;
+  double time = 3;
+  double rate = 3;
+
+  double result = calculateInterest(principal, rate, time);
+  print("The simple interest is $result.");
+}
+```
+
